@@ -53,7 +53,7 @@ const getUserWithId = function (id) {
     queryString,
     [id]
       .then((res) => {
-        if (res.rows[0].id) {
+        if (res.rows) {
           return res.rows[0];
         } else {
           return null;
